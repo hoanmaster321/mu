@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MU Online — Trang chủ</title>
+  <meta name="description" content="Trang giới thiệu MU Online — tải game và tham gia nhóm hỗ trợ." />
+  <meta property="og:title" content="MU Online — Trang chủ" />
+  <meta property="og:description" content="Tải MU Online và tham gia nhóm hỗ trợ cộng đồng." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{
+      --bg:#0b1220;--bg2:#0f172a;--txt:#e5e7eb;--muted:#94a3b8;--brand:#38bdf8;--brand-2:#0ea5e9;--btn:#111827;
+      --radius:18px;--shadow:0 10px 30px rgba(2, 6, 23, .6);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,\"Helvetica Neue\",Arial,\"Apple Color Emoji\",\"Segoe UI Emoji\";
+      color:var(--txt); background: radial-gradient(1200px 800px at 10% -10%, rgba(56,189,248,.15), transparent 60%),
+                 radial-gradient(900px 600px at 90% 10%, rgba(14,165,233,.12), transparent 60%),
+                 linear-gradient(180deg, var(--bg), var(--bg2));
+    }
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:var(--shadow)}
+    .logo span{font-weight:800;color:#0b1220}
+    .title{line-height:1}
+    .title h1{font-size:20px;margin:0 0 4px;letter-spacing:.3px}
+    .title p{margin:0;color:var(--muted);font-size:13px}
+
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;margin-top:36px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}}
+
+    .card{background:rgba(2,6,23,.55);backdrop-filter: blur(10px);border:1px solid rgba(148,163,184,.15);
+      border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+    h2{margin:0 0 12px;font-size:28px}
+    p.lead{margin:0 0 20px;color:var(--muted);font-size:15px}
+
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .btn{--p:12px 18px;display:inline-flex;align-items:center;gap:10px;padding:var(--p);border-radius:14px;text-decoration:none;font-weight:700;border:1px solid transparent;transition:transform .08s ease, opacity .2s ease, border-color .3s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn-primary{color:#0b1220;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:var(--shadow)}
+    .btn-outline{color:var(--txt);background:rgba(2,6,23,.4);border-color:rgba(148,163,184,.3)}
+
+    .mini{display:grid;gap:12px;margin-top:20px}
+    .mini-row{display:flex;gap:10px;color:var(--muted);font-size:13px}
+    .dot{width:8px;height:8px;border-radius:999px;background:var(--brand)}
+
+    .side{
+      position:relative;min-height:260px;border-radius:var(--radius);overflow:hidden;
+      background:
+       radial-gradient(400px 200px at 70% -10%, rgba(56,189,248,.25), transparent 60%),
+       linear-gradient(180deg, rgba(30,41,59,.8), rgba(2,6,23,.9));
+      border:1px solid rgba(148,163,184,.15);
+      box-shadow:var(--shadow);
+    }
+    .side-inner{position:absolute;inset:0;padding:24px;display:grid;place-items:end stretch}
+    .side h3{margin:0 0 6px;font-size:16px;color:#cbd5e1}
+    .side p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{opacity:.8;color:var(--muted);text-align:center;margin:26px 0 12px;font-size:12px}
+    .note{font-size:12px;color:var(--muted);margin-top:8px}
+    code.mono{background:rgba(148,163,184,.15);padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo"><span>MU</span></div>
+        <div class="title">
+          <h1>MU Online</h1>
+          <p>Máy chủ Việt — Nhanh • Ổn định • Cộng đồng vui vẻ</p>
+        </div>
+      </a>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Chơi ngay</h2>
+        <p class="lead">Tải game về máy và tham gia nhóm để nhận hỗ trợ, cập nhật và quà tặng sự kiện.</p>
+        <div class="actions">
+          <!-- TODO: ĐỔI LINK TẢI TẠI ĐÂY -->
+          <a class="btn btn-primary" href="https://www.mediafire.com/file/dwnodbuii7jdr75/VipMu.zip/file" target="_blank" rel="noopener">⬇️ Tải game</a>
+
+          <!-- TODO: ĐỔI LINK NHÓM HỖ TRỢ TẠI ĐÂY (Facebook/Zalo/Discord) -->
+          <a class="btn btn-outline" href="https://zalo.me/g/ofcejl387" target="_blank" rel="noopener">💬 Nhóm hỗ trợ</a>
+        </div>
+
+        <div class="mini">
+          <div class="mini-row"><span class="dot"></span><span>Patch tự động — vào game trong vài phút.</span></div>
+          <div class="mini-row"><span class="dot"></span><span>GM trực tuyến hằng ngày, hỗ trợ nhanh.</span></div>
+          <div class="mini-row"><span class="dot"></span><span>Anti-cheat &amp; tối ưu FPS cho máy yếu.</span></div>
+        </div>
+
+        <p class="note">Mẹo: Nếu trình duyệt chặn tải, hãy chọn <code class="mono">Giữ tệp</code> hoặc dùng trình tải IDM.</p>
+      </div>
+
+      <aside class="side">
+        <div class="side-inner">
+          <div>
+            <h3>Lịch trình máy chủ</h3>
+            <p>Reset lúc 00:00 • Event Boss 20:00 • Đua Top mỗi tuần</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="y"></span> MU Online — All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Hiển thị năm hiện tại
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
